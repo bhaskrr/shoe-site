@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+*{
+    /* border: 1px solid red; */
+}
+
+/* .loader{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.load{
+    width: 2rem;
+    height: 2rem;
+    border: 0.5rem solid blueviolet;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: 0.7s linear infinite reverse load;
+} */
+
+/* @keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(1turn);
+    }
+} */
+
+ nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header .heading{
+    text-align: center;
+    font-size: 2rem;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kalnia', serif;
+}
+
+nav a{
+    font-family: 'Sevillana', cursive;
+    font-size: 2rem;
+    align-self: center;
+    text-decoration: none;
+}
+
+.profile{
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-self: flex-end;
+}
+
+.profile img{
+    width: 10%;
+}
+
+.profile button{
+    background: transparent;
+    align-self: center;
+    /* border: transparent; */
+}
+  
+.hr1 {
+    border: none;
+    height: 2px;
+    background: #ccc;
+}
+
+main{
+    font-family: 'Kalnia', serif;
+    display: grid;
+    grid-template-columns: 45% 45%;
+}
+
+.menu-item{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+
+    /* border: 1px solid red; */
+}
+
+.boots-img-div, .sneakers-img-div, .heels-img-div, .flats-img-div, .sandals-img-div, .oxfords-img-div{
+    display: flex;
+    position: absolute;
+}
+
+.boots-img, .sneakers-img, .heels-img, .flats-img, .sandals-img, .oxfords-img{
+    width: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: visibility transform opacity;
+}
+
+.oxfords-img{
+    transform: translate3d(-10rem, -5rem,0);
+}
+
+.boots-img{
+    transform: translate3d(-5rem, -5rem,0);
+}
+
+.sneakers-img{
+    transform: translate3d(0, 5rem,0);
+}
+
+.heels-img{
+    transform: translate3d(0,5rem,0);
+}
+
+.flats-img{
+    transform: translate3d(-5rem, -5rem, 0);
+}
+
+.sandals-img{
+    transform: translate3d( 0, -5rem,0);
+}
+
+.visible-oxfords{
+    opacity: 1;
+    transform: translate3d(0, 0,0);
+    visibility: visible;
+}
+
+.visible{
+    opacity: 1;
+    transform: translate3d(0, 0,0);
+    visibility: visible;
+    
+}
+
+.visible-sneakers{
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0,0);
+}
+
+.visible-heels{
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+}
+
+.visible-flats{
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+}
+
+.visible-sandals{
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0rem, 0);
+}
+
+
+.boots-img, .sneakers-img, .heels-img, .flats-img, .sandals-img, .oxfords-img{
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    .header{
+        display: block;
+    }
+    .header .heading{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header{
+        display: block;
+    }
+    .header .heading{
+        width: 100%;
+    }
+}
