@@ -1,6 +1,12 @@
 const oxfords = document.querySelector(".oxfords");
 const oxfordImg = document.querySelectorAll(".oxfords-img");
 
+const derbys = document.querySelector(".derbys");
+const derbyImg = document.querySelectorAll(".derbys-img");
+
+const loafers = document.querySelector(".loafers");
+const loaferImg = document.querySelectorAll(".loafers-img");
+
 const boots = document.querySelector(".boots");
 const bootImg = document.querySelectorAll(".boots-img");
 
@@ -17,11 +23,6 @@ const sandals = document.querySelector(".sandals");
 const sandalImg = document.querySelectorAll(".sandals-img");
 
 
-
-// bootImg.style.visibility = 'visible';
-
-
-
 oxfords.addEventListener('mouseover', ()=>{
     oxfordImg.forEach((oxford)=>{
         oxford.classList.add('visible-oxfords');
@@ -34,15 +35,39 @@ oxfords.addEventListener('mouseout', ()=>{
     })
 });
 
+derbys.addEventListener('mouseover', ()=>{
+    derbyImg.forEach((derby)=>{
+        derby.classList.add('visible-derbys');
+    })
+});
+
+derbys.addEventListener('mouseout', ()=>{
+    derbyImg.forEach((derby)=>{
+        derby.classList.remove('visible-derbys');
+    })
+});
+
+loafers.addEventListener('mouseover', ()=>{
+    loaferImg.forEach((loafer)=>{
+        loafer.classList.add('visible-loafers');
+    })
+});
+
+loafers.addEventListener('mouseout', ()=>{
+    loaferImg.forEach((loafer)=>{
+        loafer.classList.remove('visible-loafers');
+    })
+});
+
 boots.addEventListener('mouseover', ()=>{
     bootImg.forEach((boot)=>{
-        boot.classList.add('visible');
+        boot.classList.add('visible-boots');
     })
 });
 
 boots.addEventListener('mouseout', ()=>{
     bootImg.forEach((boot)=>{
-        boot.classList.remove('visible');
+        boot.classList.remove('visible-boots');
     })
 });
 

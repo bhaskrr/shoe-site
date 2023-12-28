@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
-*{
-    /* border: 1px solid red; */
-}
 
 /* .loader{
     width: 100%;
@@ -91,12 +88,12 @@ main{
     /* border: 1px solid red; */
 }
 
-.boots-img-div, .sneakers-img-div, .heels-img-div, .flats-img-div, .sandals-img-div, .oxfords-img-div{
+.boots-img-div, .sneakers-img-div, .heels-img-div, .flats-img-div, .sandals-img-div, .oxfords-img-div, .derbys-img-div, .loafers-img-div{
     display: flex;
     position: absolute;
 }
 
-.boots-img, .sneakers-img, .heels-img, .flats-img, .sandals-img, .oxfords-img{
+.boots-img, .sneakers-img, .heels-img, .flats-img, .sandals-img, .oxfords-img, .derbys-img, .loafers-img{
     width: 50%;
     visibility: hidden;
     opacity: 0;
@@ -104,6 +101,14 @@ main{
 }
 
 .oxfords-img{
+    transform: translate3d(-10rem, -5rem,0);
+}
+
+.derbys-img{
+    transform: translate3d(-10rem, -5rem,0);
+}
+
+.loafers-img{
     transform: translate3d(-10rem, -5rem,0);
 }
 
@@ -129,11 +134,21 @@ main{
 
 .visible-oxfords{
     opacity: 1;
-    transform: translate3d(0, 0,0);
+    transform: translate3d(-1rem, 0,0);
+    visibility: visible;
+}
+.visible-derbys{
+    opacity: 1;
+    transform: translate3d(-1rem, 0,0);
+    visibility: visible;
+}
+.visible-loafers{
+    opacity: 1;
+    transform: translate3d(-1rem, 0,0);
     visibility: visible;
 }
 
-.visible{
+.visible-boots{
     opacity: 1;
     transform: translate3d(0, 0,0);
     visibility: visible;
@@ -165,7 +180,7 @@ main{
 }
 
 
-.boots-img, .sneakers-img, .heels-img, .flats-img, .sandals-img, .oxfords-img{
+.boots-img, .sneakers-img, .heels-img, .flats-img, .sandals-img, .oxfords-img, .derbys-img, .loafers-img{
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 }
